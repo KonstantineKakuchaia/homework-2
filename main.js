@@ -4,7 +4,7 @@ const users = [
   { name: "Ana", age: 29 },
 ];
 
-function findYoungUser(users) {
+const findYoungUser = function (users) {
   let youngest = users[0];
 
   for (let user of users) {
@@ -14,16 +14,16 @@ function findYoungUser(users) {
   }
 
   return youngest.name;
-}
+};
 
 console.log(findYoungUser(users));
 
 ////////////////////////////////////////////////////////////
 
-function newObj(users) {
+const newObj = function (users) {
   let newObjects = users.map((user) => ({ ...user }));
   return newObjects;
-}
+};
 
 console.log(newObj(users));
 
